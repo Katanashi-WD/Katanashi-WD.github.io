@@ -1,0 +1,117 @@
+/* Set default styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the body */
+  body {
+    background-color: #f0f2f5;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #8a2be2;
+  }
+  
+  /* Style the page header */
+  h1 {
+    margin: 50px 0 20px;
+    text-align: center;
+    color: #8a2be2;
+  }
+  
+  /* Style the main content */
+  img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  p {
+    margin: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Style the assignment list */
+  .assignments {
+    margin: 50px;
+  }
+  
+  .assignments ul {
+    list-style: none;
+  }
+  
+  .assignments li {
+    margin-bottom: 10px;
+  }
+  
+  .assignments a {
+    text-decoration: none;
+    color: #8a2be2;
+    font-weight: bold;
+  }
+  
+  .assignments a:hover {
+    color: #333;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #8a2be2;
+  }
+  
+  footer a:hover {
+    color: #333;
+  }
+  
+  /* Style the dragon emoji */
+  .dragon {
+    font-size: 36px;
+    color: #8a2be2;
+  }
+  
