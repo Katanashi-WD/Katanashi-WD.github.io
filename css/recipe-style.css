@@ -1,155 +1,148 @@
-/*
-font-family: 'Berkshire Swash', cursive;
-font-family: 'Pirata One', cursive;
-*/
-
+/* General styles */
 html {
     box-sizing: border-box;
     font-family: 'Pirata One', cursive;
-    font-size: 1.20rem;
-    line-height: 125%;
+    font-size: 1rem;
+    line-height: 1.5;
     color: rgb(55, 33, 1);
-}
-
-*,
-* ::before,
-* ::after {
+  }
+  
+  *,
+  *::before,
+  *::after {
     box-sizing: inherit;
-}
-
-nav{
+  }
+  
+  /* Navigation styles */
+  nav {
     background-color: rgb(197, 123, 12);
     text-align: center;
-}
-
-nav li {
+  }
+  
+  nav li {
     display: inline;
-}
-
-nav a {
-    padding: 20px;
+  }
+  
+  nav a {
+    padding: 10px;
     display: inline-block;
     color: floralwhite;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-nav a:link,
-nav a:visited {
+    font-size: 0.8rem;
+  }
+  
+  nav a:link,
+  nav a:visited {
     text-decoration: none;
-}
-
-nav a:hover,
-nav a:active {
-background-color: lightsalmon;
-color: gray;
-text-decoration: underline;
-}
-
-main {
-    width: 80%;
+  }
+  
+  nav a:hover,
+  nav a:active {
+    background-color: lightsalmon;
+    color: gray;
+    text-decoration: underline;
+  }
+  
+  /* Main content styles */
+  main {
+    width: 90%;
     margin: 0 auto;
-}
-
-h1,
-h2,
-h3 {
+  }
+  
+  h1,
+  h2,
+  h3 {
     font-family: 'Berkshire Swash', cursive;
-}
-h1 {
-    font-size: 3rem;
-    margin: 6% 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 4% 0;
     text-align: center;
-    text-shadow: 3px 5px 3px #ccc;
-}
-
-
-img {
-    float: left;
-    max-width: 30%;
-    margin-left: 10%;
-    margin-right: 10%;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
     border-radius: 50%;
     box-shadow: 5px 5px 3px #ccc;
-    shape-outside: circle(50%);
-}
-
-header h2 {
-    margin-top: 8%;
-}
-
-.rate {
-    clear: both;
-    margin-top: 6%;
+  }
+  
+  .rate {
     text-align: center;
-    font-size: 1.2rem;
-}
-
-.emoji::after {
-    content: "\1f370";
-}
-
-.details,
-.ingredients,
-.instructions,
-.nutrition {
-    width: 40%;
-    float: left;
-}
-
-.details,
-.instructions {
-    margin-right: 16%;
-    margin-left: 2%;
-}
-
-blockquote {
-    clear: both;
-    width: 300px;
-    height: 280px;
-    padding: 78px 16px 0 20px;
-    border-radius: 50%;
-    background-color: lightsalmon;
-    outline: dotted 6px rgb(197, 123, 12);
-    outline-offset: 10px;
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 1rem;
-    margin: 40px auto;
-}
-
-blockquote small {
-    text-align: right;
-}
-
-footer {
+    font-size: 0.8rem;
+  }
+  
+  /* Footer styles */
+  footer {
     background-color: rgb(197, 123, 12);
     color: floralwhite;
     padding: 2% 0;
     margin-top: 10px;
-}
-
-footer a {
+  }
+  
+  footer a {
     display: block;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     color: floralwhite;
-}
-
-footer ul {
-    list-style-type:none;
-}
-
-.col1,
-.col2,
-.col3 {
+  }
+  
+  footer ul {
+    list-style-type: none;
+  }
+  
+  .col1,
+  .col2,
+  .col3 {
     display: block;
-    float: left;
     width: 33%;
-}
-
-footer p {
+  }
+  
+  footer p {
     clear: both;
-}
-
+  }
+  
+  /* Media queries */
+  @media (min-width: 360px) {
+    html {
+      font-size: 1.1rem;
+    }
+    nav a {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 1.2rem;
+    }
+    nav a {
+      font-size: 1rem;
+    }
+    @media (min-width: 810px) {
+        /* Styles for iPad screens */
+        main {
+          width: 80%;
+        }
+        
+        nav a {
+          font-size: 1.1rem;
+        }
+        
+        footer {
+          padding: 1% 0;
+        }
+        
+        .col1,
+        .col2,
+        .col3 {
+          width: 25%;
+        }
+      }
+  }
+  
